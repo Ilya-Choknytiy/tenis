@@ -1,2 +1,3 @@
 # tenis
-lol
+Эта игра для двух игроков (теннис). Для победы нужно заработать 3 очка.   This game is for two players (tennis). To win, you need to earn 3 points.   這場比賽是為兩個球員（網球）。 要贏，您需要贏得3分。   Dieses Spiel ist für zwei Spieler (Tennis). Um zu gewinnen, müssen Sie 3 Punkte verdienen.     Hoc ludum est ad histriones Duo (tennis). Vincere, vos postulo ut earn III puncta.    Este jogo é para dois jogadores (tênis). Para vencer, você precisa ganhar 3 pontos.    Este juego es para dos jugadores (tenis). Para ganar, debes ganar 3 puntos.    Ce jeu est pour deux joueurs (tennis). Pour gagner, vous devez gagner 3 points.
+
