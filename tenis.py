@@ -1,4 +1,26 @@
-from pygame import*
+from pygame import *
+
+back = (200, 255, 255)
+win_width = 600
+win_height = 500
+window = display.set_mode((win_width, win_height))
+window.fill(back)
+
+class GameSprite(sprite.Sprite):
+    def __init__(self, player_image, player_x, player_y, size_x, size_y, player_speed):
+        sprite.Sprite.__init__(self)
+    
+        self.image = transform.scale(image.load(player_image), (size_x, size_y))
+        self.speed = player_speed
+    
+        self.rect = self.image.get_rect()
+        self.rect.x = player_x
+        self.rect.y = player_y
+    
+    def reset(self):
+        window.blit(self.image, (self.rect.x, self.rect.y))
+
+ball = GameSprite("kisspng-tennis-balls-ball-game-sport-yellow-ball-5ae160cbbfe885.1095474415247198197861 (1).png",5, win_height - 100, 80, 100, 10)
 
 back = (200, 255, 255)
 win_width = 600
@@ -16,3 +38,7 @@ while game:
 
     display.update()
     clock.tick(FPS)
+
+ball.update()
+#ball.reset()
+#ball.draw(window)
