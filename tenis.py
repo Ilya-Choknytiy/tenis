@@ -20,7 +20,7 @@ class GameSprite(sprite.Sprite):
     def reset(self):
         window.blit(self.image, (self.rect.x, self.rect.y))
 
-ball = GameSprite("kisspng-tennis-balls-ball-game-sport-yellow-ball-5ae160cbbfe885.1095474415247198197861 (1).png",5, win_height - 100, 80, 100, 10)
+ball = GameSprite("kisspng-tennis-balls-ball-game-sport-yellow-ball-5ae160cbbfe885.1095474415247198197861 (1).png",5, win_height - 100, 100, 100, 10)
 
 back = (200, 255, 255)
 win_width = 600
@@ -35,10 +35,9 @@ while game:
     for e in event.get():
         if e. type == QUIT:
             game = False
-
+    ball.update()
+    ball.reset()
     display.update()
     clock.tick(FPS)
 
-ball.update()
-#ball.reset()
-#ball.draw(window)
+
